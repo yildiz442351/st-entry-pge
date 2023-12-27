@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+</head>
+
+<body>
+    <div class="main">
+        <div class="form-box">
+            <div class="button-box">
+                <div id="btn"></div>
+                <button type="button " class="toggle-btn" onclick="login()">
+                    Log In
+                </button>
+                <button type="button " class="toggle-btn" onclick="register()">
+                    Register
+                </button>
+            </div>
+            <div class="social-icons">
+                <lottie-player class="insta"
+                    src="https://lottie.host/b38fdfdb-a55f-4865-a3ed-3373753ea815/lk77zhfVYP.json"
+                    background="transparent" speed="1" loop autoplay direction="1" mode="normal"></lottie-player>
+                <lottie-player src="https://lottie.host/3d67ca3c-2520-439f-8be0-d68970e650e0/i5J78yPYOP.json"
+                    background="transparent" speed="1" loop autoplay direction="1" mode="normal"></lottie-player>
+                <lottie-player class="face"
+                    src="https://lottie.host/4cfac274-8bd3-4dee-81b4-01d21e7dfaeb/bozzK9ocFn.json"
+                    background="transparent" speed="1" loop autoplay direction="1" mode="normal"></lottie-player>
+                <lottie-player class="linkedin"
+                    src="https://lottie.host/d6ebc97f-8f24-4645-b4f4-a2d427ed546f/RHY0G1iD0m.json"
+                    background="transparent" speed="1" loop autoplay direction="1" mode="normal"></lottie-player>
+                <lottie-player src="https://lottie.host/cf9d1359-5e16-49b5-a79e-37ad8c9eb454/RTJsOW7Ssr.json"
+                    background="transparent" speed="1" loop autoplay direction="1" mode="normal"></lottie-player>
+            </div>
+            <form id="Login" class="input-group">
+                <input type="text" class="input-field" placeholder="Enter Username" required />
+                <input type="password" class="input-field" placeholder="Enter Password" required />
+                <a href="#">Lost Your Password</a>
+                <button type="submit" class="submit-btn" id="login">Login</button>
+            </form>
+            <form id="Register" class="input-group">
+                <input type="text" class="input-field" placeholder="Enter Username" required />
+                <input type="password" class="input-field" placeholder="Enter Password" required />
+                <input type="email" class="input-field" placeholder="Enter Email" required />
+                <a href="#">By registering, you agree to Terms, Data Policy and Cookies
+                    Policy</a>
+                <button type="submit" class="submit-btn" id="register">Register</button>
+            </form>
+        </div>
+    </div>
+    <script>
+        var x = document.getElementById("Login");
+        var z = document.getElementById("Register");
+        var y = document.getElementById("btn");
+
+
+        function register() {
+            x.style.left = "-400px";
+            z.style.left = "50px";
+            y.style.left = "110px";
+        }
+
+        function login() {
+            x.style.left = "50px";
+            z.style.left = "450px";
+            y.style.left = "0px";
+        }
+    </script>
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+
+</body>
+
+</html>
